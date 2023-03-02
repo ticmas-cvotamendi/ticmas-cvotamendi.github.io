@@ -1,0 +1,38 @@
+.main__index {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia {
+    justify-content: center;
+    margin: 0.5em 2em 2em 1em;
+}
+
+.experiencia__grid {
+    margin: 0.5em 2em 2em 1em;
+}
+.fecha, .ciudad {    
+    font-family: var(--fechayciudad-font-family);
+    font-size: var(--medium);
+    font-weight: lighter;
+    padding-bottom: 0.3em;
+}
+
+.descripcion__experiencia, .descripcion__educacion {
+    font-family: var(--comun-font-family);
+    margin-top: 1.5em;
+}
+
+.lista__responsabilidades {
+    list-style-type: disc;    
+}
+
+.lista__responsabilidades--item {
+    font-family: var(--comun-font-family);
+    margin: 1em 0 0 3em;
+}
+
+.educacion {    
+    justify-content: center;
+    margin: 0.5em 2em 2em 1em;
+}

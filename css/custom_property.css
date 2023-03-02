@@ -1,0 +1,49 @@
+:root {
+
+/*Paleta*/
+
+--body-bg-color: rgb(40, 21, 74);
+--nav-bg-color: rgb(127, 166, 228);
+--main-bg-color: white;
+--trans-bg-color: beige;
+--hover-bg-color: grey;
+
+/*Tipos de fuentes*/
+
+--nav-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+--h1-font-family: 'Roboto Flex', sans-serif;
+--fechayciudad-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+--comun-font-family: Arial, Helvetica, sans-serif;
+
+/*Tamaños de fuentes*/ 
+
+--x-small: 0.75em;
+--small: 0.85em;
+--medium: 1em;
+--large: 1.33em;
+--x-large: 1.66em;
+--xx-large: 2.33em;
+
+/*Colores de fuentes*/
+
+--light-color: white;
+--nav-item: rgb(40, 21, 74);
+--text: rgb(40, 21, 74);
+
+/*Peso de fuentes*/
+
+--lighter: lighter;
+--light: light;
+--bold: bold;
+--bolder: bolder;
+}
+
+
+
+/* Otras fuentes posibles
+
+font-family: 'Questrial', sans-serif;
+font-family: 'Tilt Neon', cursive;
+font-family: 'Ubuntu', sans-serif;*/
+
+/*Espaciado*/

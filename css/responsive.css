@@ -1,0 +1,107 @@
+@media (max-width: 900px) {
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        margin: 1em;
+    } 
+
+    .nav__item {
+        padding: 0;
+    }
+
+    .headerbar {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap; 
+    }
+
+    .headerbar__izquierda, .headerbar__imagen, .headerbar__derecha {
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .headerbar__imagen {
+        padding: 2em;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        padding: 0;
+    }
+
+    .main__index {
+        margin: 0;
+    }
+
+    .main__contacto {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .section__contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin: 0;
+    }
+
+    #sigamos__h2, .sigamos__p {
+        padding: 1em;
+        margin: 0;
+    }
+
+    .container1, .container2 {
+        margin: 0;
+    }
+
+         /*No logro que los input y select se achiquen*/
+    input {
+        width: 6.25em;
+    }
+
+    select {
+        width: 6.25em;
+        height: 1.5em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    i {
+        align-items: center;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        margin: 0
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerbar__izquierda, .headerbar__derecha {
+        align-items: center;
+
+    }
+    .headerbar__imagen{
+        padding: 2em;
+    }
+}

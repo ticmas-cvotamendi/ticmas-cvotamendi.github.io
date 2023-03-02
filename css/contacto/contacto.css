@@ -1,0 +1,111 @@
+.main__contacto {
+    background-color: var(--nav-bg-color);
+    background-image: linear-gradient(var(--main-bg-color), var(--trans-bg-color));
+    margin: 1em 0;
+}
+
+/*La idea era dividir esta sección en 3 cajas y jugar con las propiedades de Flex para poder dejar el tìtulo a la izquierda, el párrafo a la derecha y el agradecimiento en el medio, pero hecho esto (que quedò medio deslucido igual) no pude hacerlo bien responsive, algo pasa con el padding que no entiendo*/
+
+.section__contacto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;      
+}
+
+#sigamos__h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;  
+    font-family: var(--h1-font-family);
+    font-weight: 500;
+    padding: 0 15em 0 2em;
+}
+
+.sigamos__p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;    
+    font-family: var(--h1-font-family);
+    font-size: var(--large);  
+    margin: 3em 3em 0 20em;    
+}
+
+.interes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--h1-font-family);
+    font-size: var(--x-large);   
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 4em;
+}
+
+.container1, .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1em;
+}
+
+label {
+    font-family: var(--comun-font-family);
+    font-size: 1em;
+    padding: 0.5em;    
+}
+
+input {
+    width: 25em;
+    font-size: var(--medium);
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+select {
+    width: 25em;
+    font-size: var(--x-small);
+    padding: 0.5em;
+    margin: 0.5em;
+    height: 2.5em;
+}
+
+::placeholder {
+    font-size: var(--small);
+    font-style: oblique;
+}
+
+#contamemas {
+    font-family: var(--comun-font-family);
+    padding: 1em;
+}
+
+button {  
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: var(--large);
+    background-color: var(--body-bg-color);
+    color: var(--light-color);  
+    margin-top: 1em; 
+    padding: 0.5em;   
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: var(--hover-bg-color);
+}
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#btn-borrar, #btn-enviar {
+    margin: 2em;
+}

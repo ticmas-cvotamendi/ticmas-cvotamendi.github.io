@@ -1,0 +1,41 @@
+/* *********************************************************************************
+Lo tomè prestado de youtube, por eso agreguè la clase .navbar al nav.
+************************************************************************************ */
+
+.navbar ul li a{
+    position: relative;
+}
+
+.navbar ul li a::before,
+.navbar ul li a::after
+{
+    content: '';
+    border-bottom: 2px solid var(--hover-bg-color);
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.navbar ul li a::before{
+    bottom: -5px;
+    width: 90%;
+    right: 0;
+}
+
+.navbar ul li a::after{
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+}
+
+.navbar ul li a.activo::before,
+.navbar ul li a:hover::before{
+    opacity: 1;
+    width: 70%;
+}
+
+.navbar ul li a.activo::after,
+.navbar ul li a:hover::after{
+    opacity: 1;
+    width: 40%;
+}

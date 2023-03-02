@@ -1,0 +1,64 @@
+aside {
+    padding: 0 2em 0 1em;   
+}
+
+.sobremi {
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+.sobremi__descripcion {
+    font-family: var(--comun-font-family);
+}
+
+.habilidades {
+    padding: 0.5em;
+}
+
+.habilidades__listado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.habilidades__caja {
+    height: 11.25em;
+    width: 5.625em;
+}
+
+.habilidades__lista { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;   
+}
+
+.habilidades__lista--item {
+    height: 1.875em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--h1-font-family);
+    font-size: var(--medium);   
+    
+}
+
+.descriptor__caja {
+    height: 11.25em;
+    width: 5.625em;
+}
+
+.descriptor__lista {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.descriptor__lista--item {
+    height: 1.875em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: var(--h1-font-family);
+    font-size: var(--medium);
+    font-weight: bold;
+}
