@@ -7,11 +7,11 @@ body{
 }
 
 .grid {
-    background-color: var(--main-bg-color);
-    background-image: linear-gradient(var(--main-bg-color), var(--trans-bg-color));
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
+    background-color: var(--main-bg-color);
+    background-image: linear-gradient(var(--main-bg-color), var(--trans-bg-color));
     margin: 0.5em 0;
 }
 

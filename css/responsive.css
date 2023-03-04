@@ -56,11 +56,10 @@
         margin: 0;
     }
 
-    #sigamos__h2, .sigamos__p {
-        padding: 1em;
-        margin: 0;
+    .encontacto, .sigamos, .interes{
+        display: flex;
+        flex-direction: column;
     }
-
     .container1, .container2 {
         margin: 0;
     }
@@ -76,9 +75,15 @@
     }
 
     footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -97,11 +102,19 @@
         flex-direction: column;
     }
 
-    .headerbar__izquierda, .headerbar__derecha {
+    #headerbar__izquierda--nombre, .headerbar__izquierda, .headerbar__derecha, .headerbar__imagen {
         align-items: center;
-
     }
-    .headerbar__imagen{
+
+    .headerbar__imagen {
         padding: 2em;
     }
+
+    #headerbar__izquierda--nombre, .headerbar__izquierda--cargo, .headerbar__derecha--direccion, .headerbar__derecha--contacto, .headerbar__imagen--imagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
 }

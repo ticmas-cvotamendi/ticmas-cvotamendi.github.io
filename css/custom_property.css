@@ -17,6 +17,7 @@
 
 /*Tamaños de fuentes*/ 
 
+--xx-small: 0.3em;
 --x-small: 0.75em;
 --small: 0.85em;
 --medium: 1em;
@@ -26,9 +27,10 @@
 
 /*Colores de fuentes*/
 
---light-color: white;
---nav-item: rgb(40, 21, 74);
---text: rgb(40, 21, 74);
+--light-tx-color: white;
+--navitem-tx-color: rgb(40, 21, 74);
+--text-tx-color: rgb(40, 21, 74);
+--cajas-tx-color: rgb(127, 166, 228);
 
 /*Peso de fuentes*/
 

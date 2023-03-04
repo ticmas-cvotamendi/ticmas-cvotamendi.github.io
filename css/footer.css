@@ -23,7 +23,7 @@ footer {
     justify-content: center;
     font-family: var(--fechayciudad-font-family);
     font-size: var(--x-small);
-    color: var(--body-bg-color);
+    color: var(--text-tx-color);
     padding-top: 1em;
 }
 
@@ -34,5 +34,6 @@ i {
     align-items: center;
     font-family: var(--comun-font-family);
     padding: 1em;
+    text-align: center;
 }
 
