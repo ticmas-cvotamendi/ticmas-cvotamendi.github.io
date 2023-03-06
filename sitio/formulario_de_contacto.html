@@ -23,9 +23,10 @@
             <ul class="nav__lista">
                 <li class="nav__item"><a href="/index.html">HOME</a></li>
                 <li class="nav__item"><a href="/sitio/formulario_de_contacto.html">CONTACTO</a></li>
-            </ul>    
-        </nav>
-        <section class="headerbar">
+            </ul>  
+            <div class="linea"></div>   
+        </nav>    
+        <section class="headerbar">  
             <div class="headerbar__izquierda">
                 <h1 id="headerbar__izquierda--nombre">Constanza Otamendi</h1>
                 <p class="headerbar__izquierda--cargo">Gerente de sucursal</p>
@@ -44,36 +45,62 @@
     <!-- Divido el main en dos secciones, una para la bienvenida al formulario y otra para el formulario -->
     <main class="main__contacto">        
         <section class="section__contacto">
-            <p class="encontacto">¿Seguimos en contacto?</p>
+            <p class="encontacto">¡Sigamos en contacto!</p>
             <p class="sigamos">Completá el formulario</p>  
-            <p class="interes">¡Gracias por tu interés!</p>
         </section>
-        <form name="contacto" id="formulario">
-            <div class="container1">            
-                <label for="nombre">Nombre y Apellido </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido" required>
-                <label for="empresa">Empresa o Institución</label>
-                <input type="text" name="empresa" id="empresa" placeholder="Ingrese la empresa o institución desde la que se contacta" required>
-                <label for="email">Correo Electrónico</label>
-                <input type="email"  name="email" id="email" user="email" placeholder="Ingrese su correo electrónico" required>
-                <label for="email">Número de teléfono</label>
-                <input type="tel"  name="telefono" id="telefono" placeholder="(XX) XXXX-XXXX" required>
-                <label for="motivo">Motivo de contacto</label>
-                <select name="motivo" id="select__motivo">
-                    <option value="entrevista">Concertar una entrevista</option>
-                    <option value="informacion">Requerir más información</option>
-                    <option value="referencia">Solicitud de referencias</option>
-                </select>
-            </div>
-            <div class="container2">
-                <label for="contamemas">Comentarios</label>
-                <textarea name="contamemas" id="contamemas" cols="30" rows="10"></textarea>
-            </div>
+        <form name="contacto" class="formulario" id="formulario"> 
+            <div class="formulario-caja">
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre y Apellido </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido" required>
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">*El nombre sólo puede contener letras, guión medio y apóstrofe</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__empresa">
+                    <label for="empresa" class="formulario__label">Empresa o Institución</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="empresa" id="empresa" placeholder="Ingrese la empresa o institución desde la que se contacta" required>
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>    
+                    </div>
+                    <p class="formulario__input-error">*Por favor, indique el nombre de la empresa o institución desde la que se contacta</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>    
+                    </div>
+                    <p class="formulario__input-error">*El correo debe tener formato example@example.com</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Número de teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="(XX) XXXX-XXXX" required>
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>    
+                    </div>
+                    <p class="formulario__input-error">*El teléfono debe tener formato (Código de área) XX (Número) xxxx-xxxx y sólo puede contener números</p>
+                </div>              
+                <div class="formulario__grupo">
+                    <label for="motivo" class="formulario__label">Motivo de contacto</label>
+                    <select name="motivo" class="formulario__input" id="select__motivo" required>
+                        <option value="vacio"></option>
+                        <option value="entrevista">Concertar una entrevista</option>
+                        <option value="informacion">Requerir más información</option>
+                        <option value="referencia">Solicitud de referencias</option>
+                        <option value="otromotivo">Otro motivo</option>
+                    </select>
+                    <p class="formulario__input-error">Por favor, seleccione un motivo de contacto</p>
+                </div>       
+                <div class="formulario__grupo">
+                    <label for="contamemas" class="formulario__label">Comentarios</label>
+                    <textarea name="contamemas" class="formulario__textarea" id="contamemas" cols="80" rows="10"></textarea> 
+                </div>   
+                <button id= "btn-borrar" type="reset">Borrar</button>
+                <button id= "btn-enviar" type="submit">Enviar</button>            
         </form>
-        <div class="boton">
-            <button id= "btn-borrar" type="reset">Borrar</button>
-            <button id= "btn-enviar" type="submit">Enviar</button>
-        </div>
+
     </main>
     <footer>   
         <div class="iconos">
@@ -91,5 +118,4 @@
 <script src="https://kit.fontawesome.com/4cbc0e982a.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="../js/formulario.js"></script>
-<script src="../js/botones.js"></script>
-<script src="../js/porid.js"></script>
+<script src="../js/prueba_select.js"></script>

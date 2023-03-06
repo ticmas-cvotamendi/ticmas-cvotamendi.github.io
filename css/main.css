@@ -3,9 +3,15 @@
     flex-direction: column;
 }
 
+.experiencia, .educacion {
+    border: 5px solid var(--body-bg-color);
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
 .experiencia {
     justify-content: center;
-    margin: 0.5em 2em 2em 1em;
+    margin: 2em 2em 2em 1em;
 }
 
 .experiencia__grid {

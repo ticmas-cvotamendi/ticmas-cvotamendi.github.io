@@ -3,6 +3,11 @@ header {
     background-image: linear-gradient(var(--trans-bg-color), var(--nav-bg-color));
 }
 
+.linea {
+    background-color: var(--body-bg-color);
+    height: 1em;
+
+}
 nav {
     background-color: var(--nav-bg-color); 
     background-image: linear-gradient(var(--nav-bg-color), var(--trans-bg-color));  
@@ -14,7 +19,7 @@ nav > ul {
     justify-content: flex-end;
     flex-wrap: wrap; 
     gap: 1em;
-    margin-right: 4em;
+    margin-right: 1em;
 }
 
 .nav__item {
@@ -34,38 +39,38 @@ a:hover {
 }
 
 .headerbar { 
+    background-image: linear-gradient(var(--trans-bg-color), var(--nav-bg-color));
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content:space-around;
-    background-image: linear-gradient(var(--trans-bg-color), var(--nav-bg-color));
+    justify-content: space-evenly;
+    padding-top: 2em;
 }
 
 #headerbar__izquierda--nombre {
-    font-size: var(--xx-large);
+    font-size: var(--x-large);
     font-family: var(--h1-font-family);
     font-weight: bolder;
-    padding: 1em 0;
+    padding-bottom: 1em;
+
 }
 
 .headerbar__izquierda, .headerbar__imagen, .headerbar__derecha {
     display: flex;
-    flex-direction: column;    
-}
-
-.headerbar__izquierda {
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.headerbar__imagen {
+    flex-direction: column; 
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    border: 5px solid var(--body-bg-color);
+    border-radius: 10px;
+    padding: 0.5em; 
+    margin-bottom: 2em; 
+    width: 30%;
+    transition: width background-color color 0.3s;
 }
 
-.headerbar__derecha {
-    align-items: flex-end;
-    justify-content: flex-start;
+.headerbar__izquierda:hover, .headerbar__imagen:hover, .headerbar__derecha:hover {
+    width: 40%;
+    background-color: var(--nav-bg-color);
+    color: var(--light-tx-color);
 }
 
 .headerbar__izquierda--cargo {

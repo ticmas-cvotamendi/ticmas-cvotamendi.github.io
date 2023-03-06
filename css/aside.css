@@ -2,17 +2,17 @@ aside {
     padding: 0 2em 0 1em;   
 }
 
-.sobremi {
-    margin-bottom: 2em;
+.sobremi, .habilidades {
+    border: 5px solid var(--body-bg-color);
+    border-radius: 10px;
     padding: 0.5em;
+}
+.sobremi {
+    margin: 2em 0;    
 }
 
 .sobremi__descripcion {
     font-family: var(--comun-font-family);
-}
-
-.habilidades {
-    padding: 0.5em;
 }
 
 .habilidades__listado {

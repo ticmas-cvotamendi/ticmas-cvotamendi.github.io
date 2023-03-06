@@ -11,6 +11,9 @@
         margin: 1em;
     } 
 
+    nav {
+        margin: 2em;
+    }
     .nav__item {
         padding: 0;
     }
@@ -19,11 +22,19 @@
        display: flex;
        flex-direction: column;
        flex-wrap: wrap; 
+       align-items: center;
     }
 
     .headerbar__izquierda, .headerbar__imagen, .headerbar__derecha {
-        align-items: flex-start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 200px;
+        transition: none;
+    }
+
+    .headerbar__izquierda:hover, .headerbar__imagen:hover, .headerbar__derecha:hover {
+        width: 60%;
     }
 
     .headerbar__imagen {
@@ -56,15 +67,14 @@
         margin: 0;
     }
 
-    .encontacto, .sigamos, .interes{
+    .encontacto, .sigamos {
         display: flex;
         flex-direction: column;
     }
-    .container1, .container2 {
+    .formulario__container1, .formulario__container2 {
         margin: 0;
     }
 
-         /*No logro que los input y select se achiquen*/
     input {
         width: 6.25em;
     }
@@ -92,7 +102,7 @@
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 330px) {
     body {
         margin: 0
     }
@@ -102,19 +112,12 @@
         flex-direction: column;
     }
 
-    #headerbar__izquierda--nombre, .headerbar__izquierda, .headerbar__derecha, .headerbar__imagen {
-        align-items: center;
-    }
-
-    .headerbar__imagen {
-        padding: 2em;
-    }
-
-    #headerbar__izquierda--nombre, .headerbar__izquierda--cargo, .headerbar__derecha--direccion, .headerbar__derecha--contacto, .headerbar__imagen--imagen {
+    .headerbar__izquierda, .headerbar__imagen, .headerbar__derecha {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        width: 100%;
     }
 
 }
