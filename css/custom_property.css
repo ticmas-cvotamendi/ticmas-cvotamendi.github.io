@@ -1,12 +1,17 @@
 :root {
 
-/*Paleta*/
+/*Colores de background*/
 
 --body-bg-color: rgb(40, 21, 74);
 --nav-bg-color: rgb(127, 166, 228);
 --main-bg-color: white;
 --trans-bg-color: beige;
 --hover-bg-color: grey;
+
+/*Colores de formulario*/
+
+--formulario-correcto: rgb(6, 174, 6);
+--formulario-incorrecto: rgb(241, 11, 11);
 
 /*Tipos de fuentes*/
 
