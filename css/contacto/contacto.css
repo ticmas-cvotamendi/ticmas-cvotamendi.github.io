@@ -16,8 +16,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 6em;
-    width: 6em;
+    height: 3em;
+    width: 13em;
     background-color: var(--nav-bg-color);
     font-family: var(--h1-font-family);
     font-size: var(--xx-large);
@@ -25,11 +25,12 @@
     text-align: center;
     border: 5px solid var(--body-bg-color);
     border-radius: 20px;
-    transition: background-color .5s;
+    transition: width background-color .5s;
 }
 
 .encontacto:hover, .sigamos:hover {
     background-color: var(--hover-bg-color);
+    width: 15em;
 }
 
 

@@ -64,11 +64,10 @@ a:hover {
     padding: 0.5em; 
     margin-bottom: 2em; 
     width: 30%;
-    transition: width background-color color 0.3s;
+    transition: background-color color 0.3s;
 }
 
 .headerbar__izquierda:hover, .headerbar__imagen:hover, .headerbar__derecha:hover {
-    width: 40%;
     background-color: var(--nav-bg-color);
     color: var(--light-tx-color);
 }
@@ -86,10 +85,12 @@ a:hover {
 .headerbar__derecha--direccion, .headerbar__derecha--contacto {
     display: flex;
     flex-direction: row; 
-    align-content: center;
-    justify-content: flex-end;     
+    justify-content: space-evenly; 
+    align-content: center;    
     font-family: var(--comun-font-family);
     font-size: var(--medium);
+    height:auto;
+    width: 17em;
     padding: 1em;
 }
 

@@ -38,7 +38,7 @@
             <div class="headerbar__derecha">
                 <p class="headerbar__derecha--direccion">3105 Avenida Los Alerces</p>
                 <p class="headerbar__derecha--direccion">Barcelona, O3698</p>
-                <p class="headerbar__derecha--contacto">(551) 507-3618</p>
+                <p class="headerbar__derecha--contacto">(55) 1507-3618</p>
                 <p class="headerbar__derecha--contacto">cotamendi@example.com</p>
             </div>
         </section>
@@ -78,10 +78,10 @@
                 <div class="formulario__grupo" id="grupo__telefono">
                     <label for="telefono" class="formulario__label">Número de teléfono</label>
                     <div class="formulario__grupo-input">
-                        <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="(XX) XXXX-XXXX" required>
+                        <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="XX-XXXX-XXXX" pattern="^[0-9]{2}-[0-9]{4}-[0-9]{4}$" required>
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>    
                     </div>
-                    <p class="formulario__input-error">*El teléfono debe tener formato (Código de área) XX (Número) xxxx-xxxx y sólo puede contener números</p>
+                    <p class="formulario__input-error">*El teléfono admite 10 dígitos y sólo puede contener números y guiones</p>
                 </div>              
                 <div class="formulario__grupo">
                     <label for="motivo" class="formulario__label">Motivo de contacto</label>
@@ -101,13 +101,12 @@
                 <button id= "btn-borrar" type="reset">Borrar</button>
                 <button id= "btn-enviar" type="submit">Enviar</button>            
         </form>
-
     </main>
     <footer>   
         <div class="iconos">
             <i class="fa-solid fa-user"> Constanza Otamendi</i>
             <i class="fa-solid fa-envelope"> cotamendi@example.com</i>
-            <i class="fa-solid fa-phone"> (551) 507-3618</i> 
+            <i class="fa-solid fa-phone"> (55) 1507-3618</i> 
         </div>
         <div class="power">
             <p class="power__p">Powered by Carol &hearts;  -  &#174 2023</p> 

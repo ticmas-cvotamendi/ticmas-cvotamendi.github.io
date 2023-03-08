@@ -6,7 +6,7 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s\'\-]{1,40}$/, // Letras y espacios, pueden llevar acentos, guion y apóstrofe.
 	empresa: /^[a-zA-Z0-9\_\-]{0,16}$/, // Letras, numeros, guion y guion_bajo
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{10}$/ // 10 numeros, falta hacer 2 y 8.
+	telefono: /^[0-9]{2}-[0-9]{4}-[0-9]{4}$/ // xx-xxxx-xxxx.
 }
 
 const campos = {
